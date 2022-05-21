@@ -1,0 +1,69 @@
+Global:
+  # path_Xtrain: data/train_toy/X_train_toy.csv
+  # path_ytrain: data/train_toy/y_train_toy.csv
+  # path_Xtest: data/train_toy/X_test_toy.csv
+  # # path_ytest: data/train_toy/y_test_toy.csv
+  # path_Xtrain: data/train_toy_medium/X_train_toy_medium.csv
+  # path_ytrain: data/train_toy_medium/y_train_toy_medium.csv
+  # path_Xtest: data/train_toy_medium/X_test_toy_medium.csv
+  # path_ytest: data/train_toy_medium/y_test_toy_medium.csv
+  # path_Xtrain: data/train_toy_1k/X_train_toy_1k.csv
+  # path_ytrain: data/train_toy_1k/y_train_toy_1k.csv
+  # path_Xtest: data/train_toy_1k/X_test_toy_1k.csv
+  # path_ytest: data/train_toy_1k/y_test_toy_1k.csv
+  # path_Xtrain: data/train_25_stratified/X_train_25_stratified.csv
+  # path_ytrain: data/train_25_stratified/y_train_25_stratified.csv
+  # path_Xtest: data/train_25_stratified/X_test_25_stratified.csv
+  # path_ytest: data/train_25_stratified/y_test_25_stratified.csv
+  # path_Xtrain: data/train_toy_half/X_train_toy_half.csv
+  # path_ytrain: data/train_toy_half/y_train_toy_half.csv
+  # path_Xtest: data/train_toy_half/X_test_toy_half.csv
+  # path_ytest: data/train_toy_half/y_test_toy_half.csv
+  # path_Xtrain: data/train_half_stratified/X_train_half_stratified.csv
+  # path_ytrain: data/train_half_stratified/y_train_half_stratified.csv
+  # path_Xtest: data/train_half_stratified/X_test_half_stratified.csv
+  # path_ytest: data/train_half_stratified/y_test_half_stratified.csv
+  # path_Xtrain: data/train_toy_big/X_train_toy_big.csv
+  # path_ytrain: data/train_toy_big/y_train_toy_big.csv
+  # path_Xtest: data/train_toy_big/X_test_toy_big.csv
+  # path_ytest: data/train_toy_big/y_test_toy_big.csv
+  path_Xtrain: data/train/X_train.csv
+  path_ytrain: data/train/y_train.csv
+  path_Xtest: data/train/X_test.csv
+  path_ytest: data/train/y_test.csv
+
+Sampling:
+  method:
+   - SMOTE
+   - NearMiss
+   - ClassWeight
+
+Preprocessing:
+  scalar: standard_scalar
+
+FeatureReduction:
+  method:
+    - SelectKBest
+
+Model:
+  paths: 
+    # - configs/config_lr.yml
+    - configs/config_sgdc.yml
+    # - configs/config_lgbm.yml
+    # - configs/config_rf.yml
+    # - configs/config_svc.yml
+
+CustomScore:
+  recall_weight: 0.75 #0.75 #0.9
+  spec_weight: 0.25 #0.25 #0.1
+
+Optimizer:
+  n_trials: 10 #2 #20
+  n_splits: 3 #3 #10
+  n_repeats: 1 #1 #3
+  Smote:
+    min: 3 #1 #3
+    max: 31 #2 #31
+  NearMiss:
+    min: 3 #1 #3
+    max: 31 #2 #31

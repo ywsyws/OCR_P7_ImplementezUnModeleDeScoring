@@ -1,0 +1,48 @@
+Model:
+  name: LGBMClassifier
+  shortname: lgbm
+  params:
+    num_leaves:
+      distribution: int
+      min: 2
+      max: 150
+    max_depth:
+      distribution: int
+      min: 2
+      max: 100
+    n_estimators:
+      distribution: int
+      min: 10
+      max: 200
+    subsample_for_bin:
+      distribution: int
+      min: 2000
+      max: 300_000
+    min_child_samples:
+      distribution: int
+      min: 20
+      max: 500
+    subsample:
+      distribution: uniform
+      min: 0.0
+      max: 1.0
+    reg_alpha:
+      distribution: uniform
+      min: 0.0
+      max: 1.0
+    reg_lambda:
+      distribution: uniform
+      min: 0.0
+      max: 1.0
+    colsample_bytree:
+      distribution: uniform
+      min: 0.6
+      max: 1.0
+    min_child_weight:
+      distribution: uniform
+      min: 0.001
+      max: 100
+    learning_rate:
+      distribution: loguniform
+      min: 0.01
+      max: 0.1

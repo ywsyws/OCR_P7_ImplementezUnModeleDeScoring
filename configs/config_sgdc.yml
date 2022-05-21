@@ -1,0 +1,25 @@
+Model:
+  name: SGDClassifier
+  shortname: sgdc
+  params:
+    loss:
+      distribution: categorical
+      list: [log, modified_huber]
+    penalty:
+      distribution: categorical
+      list: [l2, l1, elasticnet]
+    alpha:
+      distribution: loguniform
+      min: 0.00001
+      max: 0.001
+    l1_ratio:
+      distribution: uniform
+      min: 0
+      max: 1
+    learning_rate:
+      distribution: categorical
+      list: [constant, optimal, invscaling, adaptive]
+    eta0:
+      distribution: loguniform
+      min: 0.00001
+      max: 0.01

@@ -1,0 +1,27 @@
+Model:
+  name: RandomForestClassifier
+  shortname: rf
+  params:
+    criterion: 
+      distribution: categorical
+      list: [gini, entropy]
+    n_estimators:
+      distribution: int
+      min: 10
+      max: 500
+    max_depth:
+      distribution: int
+      min: 2
+      max: 100
+    min_samples_split:
+      distribution: int
+      min: 2
+      max: 50
+    min_samples_leaf:
+      distribution: int
+      min: 2
+      max: 50
+    max_leaf_nodes:
+      distribution: int
+      min: 10
+      max: 1000

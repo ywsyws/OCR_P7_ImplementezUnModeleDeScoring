@@ -1,0 +1,14 @@
+Model:
+  name: LogisticRegression
+  shortname: lr
+  params:
+    penalty:
+      distribution: categorical
+      list: [l2, none]
+    C:
+      distribution: uniform
+      min: 0
+      max: 1.0
+    solver:
+      distribution: categorical
+      list: [lbfgs, sag, saga]
