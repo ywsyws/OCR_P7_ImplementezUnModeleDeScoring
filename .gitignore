@@ -1,0 +1,47 @@
+.DS_Store
+### Docker ###
+# Dockerfile
+.devcontainer
+
+### Data & Model###
+data/
+data_raw/
+data_train/
+models/
+model/
+# results/optimization
+results/
+
+### presentation ###
+*.pptx
+
+### private ###
+# note_for_self.md
+
+### JupyterNotebooks ###
+# gitignore template for Jupyter Notebooks
+# website: http://jupyter.org/
+
+.ipynb_checkpoints
+*/.ipynb_checkpoints/*
+
+# IPython
+profile_default/
+ipython_config.py
+__pycache__/
+
+# Remove previous ipynb_checkpoints
+#   git rm -r .ipynb_checkpoints/
+
+### VisualStudioCode ###
+.vscode
+*/.vscode/*
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+
+### VisualStudioCode Patch ###
+# Ignore all local history of files
+.history%  
