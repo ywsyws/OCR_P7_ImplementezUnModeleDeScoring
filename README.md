@@ -29,7 +29,7 @@ Développer un algorithme de classification pour classifier la demande en crédi
 [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk/data)
 
 
-## 5. Retours du Jury de Soutenance
+## 6. Retours du Jury de Soutenance
 **Livrable**<br><br>
 <ins>Points forts</ins> :
 - Tous les attendus sont déposés, complets, et répondent aux attentes du projet
