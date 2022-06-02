@@ -27,3 +27,18 @@ Développer un algorithme de classification pour classifier la demande en crédi
 
 ## 5. Données
 [Home Credit Default Risk](https://www.kaggle.com/c/home-credit-default-risk/data)
+
+
+## 5. Retours du Jury de Soutenance
+**Livrable**<br><br>
+<ins>Points forts</ins> :
+- Tous les attendus sont déposés, complets, et répondent aux attentes du projet
+- Le dashbord est réalisé, et un parcours utilisateur simple permettant de répondre aux besoins des utilisateurs, les graphiques réalisés respectent les règles de lisibilités et de clarté 
+- L'API est déployée sur le web via un outil gratuit et disponible plusieurs mois 
+- L’étudiant fournit des explications claires, avec assurance.
+<br><br>
+
+**Soutenance**<br><br>
+<ins>Remarques</ins> :
+<br>
+Bonne présentation, et explication des étapes et démarches. 
